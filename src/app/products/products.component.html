@@ -1,0 +1,37 @@
+<div class="container">
+    <h2 align="middle">Lingeswaran Store</h2>
+    <hr>
+    <form #productAdd="ngForm" (ngSubmit)="addp(productAdd.value)">
+        <div class="form-group" >
+            <label>Product Name</label>
+                <input type="text" class="form-control" name="Product_name" [(ngModel)]="prod_name"  />
+        </div>
+         <div class="form-group">
+            <label>Product Id</label>
+                <input type="Number" class="form-control" name="Product_id" [(ngModel)]="prod_id" />
+        </div>
+         <div class="form-group">
+            <label>Cost</label>
+                <input type="Number" class="form-control" name="Product_cost" [(ngModel)]="prod_cost" />
+        </div>
+         <div class="form-group">
+            <label>GST</label>
+                <input type="Number" class="form-control" name="Product_gst" [(ngModel)]="prod_gst" />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+</div>
+<div class="container">
+  <h2 align="middle">Product List</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>PRODUCT</th>
+      <th>COST</th>
+      <th>GST %</th>
+    </tr>
+  </thead>
+<tr *ngFor = "let a of prod_name">{{x}}</tr>
+</table>
+  </div>

@@ -1,0 +1,31 @@
+<div class="container">
+    <h2 align="middle">Lingeswaran Store</h2>
+    <hr>
+    <form #productAdd="ngForm" (ngSubmit)="onSubmit(productAdd.value)">
+        <div class="form-group" >
+            <label>Product Name/Product Id</label>
+                <input type="text" class="form-control" name="Product_name" [(ngModel)]="prod_name"  />
+                <label>Quantity</label>
+                <input type="number" class="form-control" name="Quantity" [(ngModel)]="quantity"  />
+                <button type="submit" class="btn btn-primary">Add Product</button>
+        </div>
+    </form>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>ID</th>
+      <th>PRODUCT</th>
+      <th>COST</th>
+      <th>QTY</th>
+      <th>AMOUNT</th>
+    </tr>
+  </thead>
+
+</table>
+ </div>
+ <div class="container">
+  <h2 align="middle">PRODUCT LIST</h2>
+
+  </div>
